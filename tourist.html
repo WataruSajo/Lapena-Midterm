@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batangas: Top Destinations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            background: url("images/v29_116.png") no-repeat center center/cover;
+            background-attachment: fixed;
+            background-color: #000;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #ffc107;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 110px;
+            height: 45px;
+            margin-right: 0px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #d28a06;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .destination-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        /*Panghimo og Box*/
+        .destination-card {
+            width: 320px;
+            background: #ffc107;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #d28a06;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .card-content h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: black;
+            line-height: 1.4;
+        }
+
+        footer {
+            background-color: #ffc107;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/v20_9.png" alt="City of Batangas Logo">
+            <div class="logo-text">City Of Batangas</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="Tourist.html">Tourist</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Batangas: Top Destinations</h1>
+    </div>
+
+    <div class="destination-container">
+        <div class="destination-card">
+            <img src="images/v35_119.png" alt="Monte Maria Shrine">
+            <div class="card-content">
+                <h2>1. The Monte Maria Shrine</h2>
+                <p>On top of our list is one of the newest tourist destinations in Batangas, The Monte Maria Shrine,
+                    which is a place dedicated to Mother Mary. The statue of the Virgin Mary is 98 meters tall—as tall
+                    as eight buses upright. This place is not only popular with pilgrims, but also to locals and
+                    tourists.
+                    Everyone is welcome here. The Shrine is easy to access because it is just 45 minutes away from
+                    Batangas City.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="images/v35_133.png" alt="Fantasy World">
+            <div class="card-content">
+                <h2>2. Fantasy World</h2>
+                <p>This place should undoubtedly be on the list, especially if you love taking photos and exploring
+                    abandoned places.
+                    The Fantasy World isan abandoned amusement park located in Lemery, Batangas. Though it may feel
+                    quite creepy, Fantasy
+                    World is still popular with tourists. Every turn showcases a picturesque view, perfect for both
+                    Instagram-worthy shots
+                    and colorful subjects for photo collections.</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="images/v35_136.png" alt="Saint Padre Pio Parish and Shrine">
+            <div class="card-content">
+                <h2>3. Saint Padre Pio Parish and Shrine</h2>
+                <p>The Padre Pio Shrine is a pilgrimage site and is one of the most famous destinations in Sto. Tomas ,
+                    Batangas If reflection
+                    and meditation is a must for you to ground yourself when traveling and exploring places, visiting
+                    the Padre Pio Shrine is going
+                    to be bliss for you.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024-2025 | All Rights Reserved
+    </footer>
+</body>
+
+</html>

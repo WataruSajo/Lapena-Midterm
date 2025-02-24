@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Of Batangas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+        }
+
+        header {
+            background-color: #ffc107;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 110px;
+            height: 45px;
+        }
+
+        .logo span {
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 87vh;
+            background: url("images/v20_3.png") no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            color: white;
+            z-index: 2;
+            max-width: 700px;
+            margin-bottom: 20px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+        }
+
+        .content p {
+            font-size: 22px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* CAROUSEL */
+        .carousel-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .description-container {
+            flex: 1;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-align: left;
+            max-width: 300px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 5px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: black;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        footer {
+            background-color: #ffc107;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/v20_9.png" alt="Batangas Logo">
+            <span>City of Batangas</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="Tourist.html">Tourist</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to Batangas City Festival</h1>
+            <p></p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <button class="prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="carousel-slide"><img src="images/sublian.png" alt="Sublian Festival"></div>
+                    <div class="carousel-slide"><img src="images/maliputo.png" alt="Maliputo Fish"></div>
+                    <div class="carousel-slide"><img src="images/mahaguyog.png" alt="Mahaguyog Festival"></div>
+                    <div class="carousel-slide"><img src="images/lechon.png" alt="Batangas Lechon"></div>
+                    <div class="carousel-slide"><img src="images/sinukmani.png" alt="Sinukmani Delicacy"></div>
+                    <div class="carousel-slide"><img src="images/bancathon.png" alt="Bancathon Race"></div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="description-container" id="slide-description">
+                The Sublian Festival is a two-week celebration that ends every year on July 23, honoring the Batangueños' devotion to their patron saints, the Holy Cross in Bauan and Agoncillo, and the Sto. Niño in Batangas City.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-2025 ITP4 | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        const carousel = document.querySelector('.carousel');
+        const description = document.getElementById('slide-description');
+
+        const descriptions = [
+            "Sublian Festival - The Sublian Festival is a two-week celebration that ends every year on July 23, honoring the Batangueños' devotion to their patron saints, the Holy Cross in Bauan and Agoncillo, and the Sto. Niño in Batangas City.",
+            "Maliputo Festival - A festival that showcases the endemic fish called Maliputo and its contribution to the growing fish industry in the area.",
+            "Mahaguyog Festival - The Mahaguyog Festival is a week-long annual celebration held in Sto. Tomas, Batangas in February to honor the town's patron saint and give thanks for the abundant agricultural harvests of corn, plants, vegetables, and coconuts.",
+            "Lechon Festival - The Lechon Parade happens on the 24th of June, the same date as the feast day of San Juan.",
+            "Sinukmani Festival - The town of Rosario, the Rice Granary of Batangas, celebrates the making of sweet sticky rice every 9th of June. Sinukmani is made from glutinous rice, coconut milk, and sugar.",
+            "Bancathon Festival - The Bancathon Festival is an exciting annual celebration in Batangas that highlights the region's rich maritime heritage and love for water sports. This vibrant event features thrilling banca races, showcasing the skill and teamwork of local participants as they paddle through the stunning waters of Batangas Bay."
+        ];
+
+        function moveSlide(step) {
+            slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+            carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
+            description.textContent = descriptions[slideIndex];
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
+        document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+    </script>
+</body>
+
+</html>

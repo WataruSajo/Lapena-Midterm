@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Batangas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            background: url("images/v23_35.png") no-repeat center center/cover;
+            color: black;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #ffc107;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 110px;
+            height: 45px;
+            margin-right: 0px;
+        }
+
+        .logo span {
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .map {
+            width: 40%;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .map img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .history {
+            width: 50%;
+            background: #ffa000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .history h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .history p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #ffc107;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/v20_9.png" alt="Batangas Logo">
+            <span>City Of Batangas</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="tourist.html">Tourist</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="map">
+            <img src="images/v35_151.png" alt="Batangas Map">
+        </div>
+        <div class="history">
+            <h1>History Of Batangas</h1>
+            <p>
+                Originally comprised of Occidental Mindoro, Oriental Mindoro, Marinduque, and parts of Laguna and Ambos-Camarines,
+                Batangas was known as COUMINTAN or KUMINTANG. In 1534, it became the first practically organized province in Luzon,
+                officially founded in 1581. Balayan was the capital from 1597-1732 before it moved to Taal. After severe eruptions of Taal
+                Volcano, the capital was transferred to Batangas City in 1754, where it remains today.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-2025 ITP4 | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
